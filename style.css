@@ -48,3 +48,29 @@ header{
     bottom: -4px;
     left: 20px;
 }
+
+
+
+#banner {
+    background-image: url("./img/home page/12.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    height: 90vh;
+    width: 100%;
+    
+}
+
+/* #banner_1 img{
+    width: 50%;
+    height: 500px;
+}
+
+#banner_2 img{
+    width: 40%;
+    height: 250px;
+}
+
+#banner_3 img{
+    width: 40%;
+    height: 250px;
+} */

@@ -2,4 +2,49 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 0px 40px;
+    background: #B79B7E;
+}
+
+#logo{
+    font-weight: 600;
+    color: azure;
+}
+
+#navigation_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#navigation_bar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigation_bar a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+#navigation_bar a:hover,
+#navigation_bar a.active{
+    color: rgb(61, 74, 74);
+}
+
+#navigation_bar a:hover::after,
+#navigation_bar a.active::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: rgb(61, 74, 74);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }

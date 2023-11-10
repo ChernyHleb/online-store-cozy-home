@@ -35,7 +35,7 @@ header{
 
 #navigation_bar a:hover,
 #navigation_bar a.active{
-    color: rgb(61, 74, 74);
+    color: black;
 }
 
 #navigation_bar a:hover::after,
@@ -43,34 +43,61 @@ header{
     content: "";
     width: 70%;
     height: 2px;
-    background: rgb(61, 74, 74);
+    background: black;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
 
+#banners {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    padding: 20px;
+}
 
+#banner_1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 
-#banner {
-    background-image: url("./img/home page/12.jpg");
-    background-size: cover;
+#banner_2 {
+    grid-column-start: 2;
+}
+
+#banner_3 {
+    grid-column-start: 2;
+}
+
+#banners img {
     border-radius: 10px;
-    height: 90vh;
+    object-fit: cover;
+    height: 80%;
+    width: 95%;
+}
+
+#banner_1 img {
+    height: 100%;
+}
+
+#banners a{
+    text-decoration: none;
+}
+
+.banner_text {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+#new_collection {
     width: 100%;
-    
+    position: absolute;
+    font-size: 50px;
+    padding: 40px 50px;
+    bottom: 0;
+    left: 10;
+    color: white;
 }
-
-/* #banner_1 img{
-    width: 50%;
-    height: 500px;
-}
-
-#banner_2 img{
-    width: 40%;
-    height: 250px;
-}
-
-#banner_3 img{
-    width: 40%;
-    height: 250px;
-} */

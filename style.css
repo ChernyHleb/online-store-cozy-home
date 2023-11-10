@@ -5,6 +5,11 @@ header{
 
     padding: 0px 40px;
     background: #B79B7E;
+
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #logo{

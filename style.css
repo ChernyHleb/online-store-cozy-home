@@ -106,3 +106,46 @@ header{
     left: 10;
     color: white;
 }
+
+.product {
+    width: 30%;
+    text-align: center;
+    margin: 15px 0px;
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.4s;
+}
+
+.product_image{
+    margin-top: 35px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product_like {
+    position: relative;
+}
+
+.product_like img {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.product:hover {
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+#products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}

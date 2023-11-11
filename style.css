@@ -67,11 +67,7 @@ header{
     grid-row-end: 3;
 }
 
-#banner_2 {
-    grid-column-start: 2;
-}
-
-#banner_3 {
+#banner_2 , #banner_3{
     grid-column-start: 2;
 }
 
@@ -97,7 +93,7 @@ header{
     color: black;
 }
 
-#new_collection {
+/* #new_collection {
     width: 100%;
     position: absolute;
     font-size: 50px;
@@ -105,7 +101,7 @@ header{
     bottom: 0;
     left: 10;
     color: white;
-}
+} */
 
 .product {
     width: 30%;

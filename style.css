@@ -182,8 +182,39 @@ header{
 
 #feedback {
     text-align: center;
+    padding: 0px 150px;
+}
+
+#feedback h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
 }
 
 #feedback input {
     margin-bottom: 30px;
+    height: 40px;
+}
+
+.text_input_feedback {
+    background-color:rgb(239, 239, 239) ;
+    border-color: rgb(225, 225, 225);
+    border-radius: 6px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.send_button {
+    background: #B79B7E;
+    color: white;
+    font-size: 18px;
+    width: 40%;
+    border-color: #B79B7E;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send_button:hover {
+    background: #e3c6a8
 }

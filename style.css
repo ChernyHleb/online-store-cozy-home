@@ -218,3 +218,24 @@ header{
 .send_button:hover {
     background: #e3c6a8
 }
+
+footer  {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(228, 228, 228);
+}
+
+.footer_column div{
+    margin-bottom: 10px;
+}
+
+.footer_column a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.footer_column a:hover {
+    color: #B79B7E;
+}

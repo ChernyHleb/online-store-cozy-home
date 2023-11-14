@@ -6,7 +6,7 @@ header{
     padding: 0px 40px;
     background: #B79B7E;
 
-    z-index: 999;
+    z-index: 10;
     position: sticky;
     top: 0;
     left: 0;
@@ -155,6 +155,14 @@ header{
 
     background-color: rgb(229, 229, 229);
     border-radius: 10px;
+    transition: 0.2s;
+
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.category:hover {
+    border: 1px solid black;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 #categories_1 .category {
@@ -178,6 +186,11 @@ header{
     font-weight: 400;
     color: black;
     margin-top: 10px;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
 }
 
 #feedback {
@@ -238,4 +251,27 @@ footer  {
 
 .footer_column a:hover {
     color: #B79B7E;
+}
+
+#shopping_button div a{
+    display: block;
+    padding: 10px 15px;
+}
+
+#shopping_categories {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: #B79B7E;
+    min-width: 150px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#shopping_button:hover #shopping_categories{
+    display: block ;
+}
+
+#shopping_categories a:hover::after,
+#shopping_categories a.active::after {
+    height: 0px;
 }

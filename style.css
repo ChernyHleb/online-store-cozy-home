@@ -291,7 +291,17 @@ footer  {
     padding: 20px;
     row-gap: 20px;
 }
+
 .review_img {
     border-radius: 10px;
     width: 90%;
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+#search_container {
+    
 }

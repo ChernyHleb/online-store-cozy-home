@@ -306,6 +306,6 @@ aside {
     width: 25%;
 }
 
-#search_container {
-
+.hide {
+    display: none;
 }

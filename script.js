@@ -67,12 +67,22 @@ let products = {
     ]
 };
 
-filterChange("ALL");
+let selection = document.getElementById("plant_type");
+filterChange(selection);
 
-function filterChange(value) {
+function filterChange(selection) {
+    alert(selection.value);
+    document.getElementById("products").innerHTML= "";
+
     for (const item of products.data) {
+        if(selection.id === "plant_type" && selection.value === item.type){
+            createProductHTML(item);
+        }
+    }
+}
 
-        let product = document.createElement("div");
+function createProductHTML(item){
+    let product = document.createElement("div");
         product.classList.add("product", item.category);
 
         let image = document.createElement("img");
@@ -94,5 +104,4 @@ function filterChange(value) {
         product.appendChild(description);
 
         document.getElementById("products").appendChild(product);
-    }
 }

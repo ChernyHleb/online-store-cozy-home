@@ -67,15 +67,21 @@ let products = {
     ]
 };
 
-let selection = document.getElementById("plant_type");
-filterChange(selection);
+window.onload = () => { 
+    for (const item of products.data) {
+        createProductHTML(item);
+    }
+};
 
-function filterChange(selection) {
-    alert(selection.value);
+function filterChange() {
+    let plant_type = document.getElementById("plant_type");
+    let manufacturer_country = document.getElementById("manufacturer_country");
+
     document.getElementById("products").innerHTML= "";
 
     for (const item of products.data) {
-        if(selection.id === "plant_type" && selection.value === item.type){
+        if((plant_type.value === item.type || plant_type.value === "all") &&
+           (manufacturer_country.value === item.manufacturer_country || manufacturer_country.value === "all")) {
             createProductHTML(item);
         }
     }

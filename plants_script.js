@@ -87,3 +87,19 @@ function filterChange() {
     }
 }
 
+function search() {
+    let search_content = document.getElementById("search_bar");
+    document.getElementById("products").innerHTML= "";
+
+    for (const item of products.data) {
+        if(search_content.value === "") {
+            createProductHTML(item);
+            continue;
+        }
+
+        if(item.product_name.toLowerCase().includes(search_content.value.toLowerCase())) {
+            createProductHTML(item);
+        }
+    }
+}
+

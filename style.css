@@ -276,7 +276,7 @@ footer  {
     top: 20px;
     background-color: #B79B7E;
     min-width: 150px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #shopping_button:hover #shopping_categories{

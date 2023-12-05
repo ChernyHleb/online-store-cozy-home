@@ -20,5 +20,12 @@ function createProductHTML(item){
 
         product.appendChild(description);
 
+        product.setAttribute("name", item.product_name);
+        image.setAttribute("name", item.product_name);
+
+        product.onclick = (event) => {
+            console.log(event.target.name);
+        };
+
         document.getElementById("products").appendChild(product);
 }

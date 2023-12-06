@@ -1,6 +1,6 @@
 function createProductHTML(item){
     let product = document.createElement("div");
-        product.classList.add("product", item.category);
+        product.classList.add("product", item.product_type);
 
         let image = document.createElement("img");
         image.classList.add("product_image")
@@ -11,7 +11,7 @@ function createProductHTML(item){
         description.classList.add("product_description");
 
         let span = document.createElement("span");
-        span.innerHTML = item.product_name;
+        span.innerHTML = item.name;
         description.appendChild(span);
 
         let h = document.createElement("h3");
@@ -20,11 +20,14 @@ function createProductHTML(item){
 
         product.appendChild(description);
 
-        product.setAttribute("name", item.product_name);
-        image.setAttribute("name", item.product_name);
+        product.setAttribute("name", item.name);
+        image.setAttribute("name", item.name);
+        span.setAttribute("name", item.name);
+        h.setAttribute("name", item.name);
+        description.setAttribute("name", item.name);
 
         product.onclick = (event) => {
-            console.log(event.target.name);
+            console.log(event.target.getAttribute('name'));
         };
 
         document.getElementById("products").appendChild(product);

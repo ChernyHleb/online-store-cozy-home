@@ -111,6 +111,7 @@ header{
     border: 1px solid black;
     border-radius: 6px;
 
+    cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
     transition: 0.4s;
 }

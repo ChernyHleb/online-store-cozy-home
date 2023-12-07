@@ -6,7 +6,7 @@ header{
     padding: 0px 40px;
     background: #B79B7E;
 
-    z-index: 10;
+    z-index: 1;
     position: sticky;
     top: 0;
     left: 0;
@@ -36,6 +36,10 @@ header{
     font-size: 20px;
     font-weight: 600;
     transition: 0.2s;
+}
+
+#navigation_bar img {
+    cursor: pointer;
 }
 
 #navigation_bar a:hover,
@@ -309,3 +313,30 @@ aside {
 .hide {
     display: none;
 }
+
+.popup .popup_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100vw;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+
+#signup_popup_content {
+    position: fixed;
+    top: 35%;
+    left: 22%;
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 3;
+
+    text-align: center;
+    padding: 20px 35px;
+    border-radius: 10px;
+    display: none;
+}
+

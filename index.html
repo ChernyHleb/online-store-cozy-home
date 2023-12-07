@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contacts.html">Contacts</a></li>
-                <li><a href=""><img src="./img/icons/User.png" alt=""></a></li>
+                <li><img src="./img/icons/User.png" alt="" onclick="toggle_signup_popup()"></li>
                 <li><a href=""><img src="./img/icons/Shopping Cart.png" alt=""></a></li>
             </ul>
         </nav>
@@ -251,6 +251,20 @@
         </form>
     </div>
 
+    <div class="popup">
+        <div class="popup_overlay" id="signup_popup_overlay"
+        onclick="hide_popup()"></div>
+        <div id="signup_popup_content" class="popup_content">
+            <h1>Sign up</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed consequuntur optio soluta? Inventore, dolore repudiandae 
+                suscipit iure itaque praesentium explicabo incidunt ipsum eveniet
+                 nihil dicta dolorem possimus deserunt. Animi, id?
+            </p>
+        </div>
+    </div>
+
     <footer>
         <div class="footer_column">
             <div><a href="">Delivery and payment</a></div>
@@ -276,5 +290,7 @@
             <img src="./img/icons/Facebook.png" alt="">
         </div>
     </footer>
+
+    <script src="./signup_popup.js"></script>
 </body>
 </html>

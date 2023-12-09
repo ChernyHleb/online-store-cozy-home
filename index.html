@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contacts.html">Contacts</a></li>
-                <li><img src="./img/icons/User.png" alt="" onclick="toggle_signup_popup()"></li>
+                <li><img src="./img/icons/User.png" alt="" onclick="toggle_signin_popup()"></li>
                 <li><a href=""><img src="./img/icons/Shopping Cart.png" alt=""></a></li>
             </ul>
         </nav>
@@ -227,7 +227,7 @@
 
     <div id="feedback">
         <form action="#" method="get">
-            <h3>Feedback</h3>
+            <h2>Feedback</h2>
             <div>
                 <input type="text" class="text_input_feedback" placeholder="Name" name="username">
             </div>
@@ -242,7 +242,8 @@
             </div>
             <div id="feedback_checkbox">
                 <input type="checkbox" name="aware">
-                <p>I hereby confirm that I am aware of and agree to the terms of the offer and the privacy policy</p>
+                <p>I hereby confirm that I am aware of and agree to the terms of the offer and the 
+                    privacy policy</p>
             </div>
             <div>
                 <input type="submit" class="send_button" value="Send">   
@@ -251,19 +252,49 @@
         </form>
     </div>
 
-    <div class="popup">
-        <div class="popup_overlay" id="signup_popup_overlay"
-        onclick="hide_popup()"></div>
-        <div id="signup_popup_content" class="popup_content">
-            <h1>Sign up</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sed consequuntur optio soluta? Inventore, dolore repudiandae 
-                suscipit iure itaque praesentium explicabo incidunt ipsum eveniet
-                 nihil dicta dolorem possimus deserunt. Animi, id?
-            </p>
-        </div>
+    <div id="signup_popup" class="popup">
+        <form action="#" method="get">
+            <div class="popup_overlay" id="signup_popup_overlay" onclick="hide_signup_popup()"></div>
+            <div id="signup_popup_content" class="popup_content">
+                <h2>Sign up</h2>
+                <label for="signup_input_username">Username</label>
+                <div><input type="text" name="" id="signup_input_username"></div>
+
+                <label for="signup_input_email">Email</label>
+                <div><input type="text" name="" id="signup_input_email"></div>
+
+                <label for="signup_input_password">Password</label>
+                <div><input type="text" name="" id="signup_input_password"></div>
+
+                <label for="signup_input_repeat_password">Repeat Password</label>
+                <div><input type="text" name="" id="signup_input_repeat_password"></div>
+
+                <div><input type="submit" class="send_button" value="Sign up"></div>
+
+                <a href="#" onclick="toggle_signin_popup()">I already have an account</a>
+            </div>
+        </form>
     </div>
+
+    <div id="signin_popup" class="popup">
+        <form action="#" method="get">
+            <div class="popup_overlay" id="signin_popup_overlay" onclick="hide_signin_popup()"></div>
+            <div id="signin_popup_content" class="popup_content">
+                <h2>Sign in</h2>
+
+                <label for="signin_input_email">Email</label>
+                <div><input type="text" name="" id="signin_input_email"></div>
+
+                <label for="signin_input_password">Password</label>
+                <div><input type="text" name="" id="signin_input_password"></div>
+
+                <div><input type="submit" class="send_button" value="Sign in"></div>
+
+                <a href="#" onclick="toggle_signup_popup()">Create profile</a>
+            </div>
+        </form>
+    </div>
+    
 
     <footer>
         <div class="footer_column">
@@ -291,6 +322,6 @@
         </div>
     </footer>
 
-    <script src="./signup_popup.js"></script>
+    <script src="./authentication_popup.js"></script>
 </body>
 </html>

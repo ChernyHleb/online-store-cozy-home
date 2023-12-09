@@ -6,7 +6,7 @@ header{
     padding: 0px 40px;
     background: #B79B7E;
 
-    z-index: 1;
+    z-index: 4;
     position: sticky;
     top: 0;
     left: 0;
@@ -202,13 +202,17 @@ header{
     padding: 0px 150px;
 }
 
-#feedback h3 {
+#feedback h2, 
+#signup_popup h2,
+#signin_popup h2 {
     font-size: 30px;
     font-weight: 500;
     margin-top: 0;
 }
 
-#feedback input {
+#feedback input, 
+#signup_popup input,
+#signin_popup input { 
     margin-bottom: 30px;
     height: 40px;
 }
@@ -327,16 +331,33 @@ aside {
 
 #signup_popup_content {
     position: fixed;
-    top: 35%;
-    left: 22%;
+    top: 15%;
+    left: 21%;
     background: #fff;
     width: 450px;
-    height: 220px;
+    height: 550px;
     z-index: 3;
 
-    text-align: center;
     padding: 20px 35px;
     border-radius: 10px;
     display: none;
+}
+
+#signin_popup_content {
+    position: fixed;
+    top: 15%;
+    left: 21%;
+    background: #fff;
+    width: 450px;
+    height: 550px;
+    z-index: 3;
+
+    padding: 20px 35px;
+    border-radius: 10px;
+    display: none;
+}
+
+#signup_popup_content h2{
+    text-align: center;
 }
 

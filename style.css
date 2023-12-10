@@ -217,11 +217,15 @@ header{
     height: 40px;
 }
 
-#feedback .text_input_feedback:focus {
+#feedback .text_input_feedback:focus,
+#signup_popup input:focus,
+#signin_popup input:focus {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.text_input_feedback {
+#feedback input[type = "text"],
+#signup_popup input[type = "text"],
+#signin_popup input[type = "text"] {
     background-color:rgb(239, 239, 239);
     border-color: rgb(225, 225, 225);
     border-radius: 6px;
@@ -335,7 +339,7 @@ aside {
     left: 21%;
     background: #fff;
     width: 450px;
-    height: 550px;
+    height: 540px;
     z-index: 3;
 
     padding: 20px 35px;
@@ -345,11 +349,11 @@ aside {
 
 #signin_popup_content {
     position: fixed;
-    top: 15%;
+    top: 25%;
     left: 21%;
     background: #fff;
     width: 450px;
-    height: 550px;
+    height: 350px;
     z-index: 3;
 
     padding: 20px 35px;
@@ -357,7 +361,9 @@ aside {
     display: none;
 }
 
-#signup_popup_content h2{
+#signup_popup_content h2,
+#signin_popup_content h2,
+.center {
     text-align: center;
 }
 
